@@ -1,0 +1,48 @@
+.filmItem {
+    margin: 20px;
+    max-width: 280px;
+    position: relative;
+}
+
+.filmItem img {
+    max-width: 280px;
+}
+
+.filmItem p {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ececec;
+}
+
+.filmItem span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #151515;
+    color: #ececec;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    font-size: 24px;
+}
+
+@media(max-width:660px) {
+    .filmItem {
+        max-width: 200px;
+    }
+    
+    .filmItem img {
+        max-width: 200px;
+    }
+
+    .filmItem span {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 18px;
+    }
+}

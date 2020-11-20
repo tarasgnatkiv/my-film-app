@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 import Header from '../Header/Header';
 import ContainerPopularFilms from '../../containers/ContainerPopularFilms';
@@ -15,18 +15,12 @@ function App() {
             <Header />
             <div className='container'>
                 <div className='AppContent'>
-                    <p>aaaaa</p>
-
                     <Switch>
-
-                        <Route exact path='/' component={App1} />
-                        <Route path='/top250'>
-                            <App2 />
-                        </Route>
-                        <Route path='/rated' component={App3} />
-
+                        <Redirect exact from="/" to="/home" />
+                        <Route exact path='/home' component={ContainerPopularFilms} />
+                        <Route exact path='/top250' component={App2} />
+                        <Route exact path='/rated' component={App3} />
                     </Switch>
-                    <ContainerPopularFilms />
                 </div>
             </div>
             <Footer />

@@ -21,19 +21,17 @@ body {
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1380px;
     margin: 0 auto;
 }
 
 .App {
     background-color: #080808;
-    padding: 20px 0 0 0;
-
 }
 
 .AppContent {
     margin: 76px 0 20px 0;
-    background-color: #ececec;
+    /* background-color: #ececec; */
     border-radius: 10px;
 }
 

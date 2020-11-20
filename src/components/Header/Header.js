@@ -46,10 +46,10 @@ class Header extends React.Component {
                                 <nav className={this.state.clicked ? 'headerMenu active' : 'headerMenu'}>
                                     <ul className='headerList'>
                                         <li>
-                                            <Link to={'/'} className="headerLink" onClick={this.handleClick}>Popular</Link>
+                                            <Link to={'/home'} className="headerLink" onClick={this.handleClick}>Home</Link>
                                         </li>
                                         <li>
-                                            <Link to={'/top250'} className="headerLink" onClick={this.handleClick}>Top250</Link>
+                                            <Link to={'/top250'} className="headerLink" onClick={this.handleClick}>Top 250</Link>
                                         </li>
                                         <li>
                                             <Link to={'/rated'} className="headerLink" onClick={this.handleClick}>Rated</Link>

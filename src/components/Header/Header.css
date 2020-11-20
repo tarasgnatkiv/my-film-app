@@ -5,15 +5,17 @@
     left: 0;
     width: 100%;
     padding: 3px 10px;
+    z-index: 10;
 }
 
 .headerBody {
     display: flex;
+    justify-content: space-between;
 }
 
 /* ================================= */
 .headerRight {
-    width: 100%;
+    /* width: 100%; */
 }
 /* ================================= */
 
