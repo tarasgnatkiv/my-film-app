@@ -2,7 +2,6 @@ import React from 'react';
 import ComponentFilm from '../ComponentFilm/ComponentFilm';
 import { Switch, Route } from "react-router-dom";
 import './ComponentPopularFilms.css';
-import ComponentFilmInfo from '../ComponentFilmInfo'
 
 
 class ComponentPopularFilms extends React.Component {
@@ -17,7 +16,7 @@ class ComponentPopularFilms extends React.Component {
         if (this.props.ReducerPopularFilms.filmsArray) {
             filmsArr = this.props.ReducerPopularFilms.filmsArray.map(i =>
                 <ComponentFilm info={i} />
-                  
+            
             );
         } else {
             filmsArr = <div>Loading</div>
